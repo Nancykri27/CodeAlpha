@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Book Library</h1>
+    </header>
+    <main>
+        <section id="book-form">
+            <h2>Add a New Book</h2>
+            <form id="add-book-form">
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+        <section id="book-list">
+            <h2>Book List</h2>
+            <input type="text" id="search" placeholder="Search books...">
+            <ul id="books">
+                <!-- Books will be displayed here -->
+            </ul>
+        </section>
+        <section id="borrowing-history">
+            <h2>Borrowing History</h2>
+            <ul id="history">
+                <!-- Borrowing history will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <h2>Borrowing History</h2>
+            <ul id="modal-history">
+                <!-- Detailed borrowing history will be displayed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
